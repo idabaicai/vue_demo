@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/todo">Todo</router-link> |
-      <router-link to="/modal">Modal</router-link>
+      <router-link to="/modal">Modal</router-link> |
+      <router-link to="/state">State Management</router-link>
     </div>
     <router-view/>
   </div>

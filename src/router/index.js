@@ -27,6 +27,11 @@ const routes = [
     path: '/modal',
     name: 'modal',
     component: () => import('../views/ModalShow.vue')
+  },
+  {
+    path: '/state',
+    name: 'state',
+    component: () => import('../views/StateManagement.vue')
   }
 ]
 
