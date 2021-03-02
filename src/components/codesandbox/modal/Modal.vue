@@ -9,9 +9,8 @@
           <slot name="content"></slot>
         </div>
         <div class="footer">
-          <slot name="footer">
-            <!-- <button @click="close">ok</button> -->
-            <button @click="$emit('onClose')">fine</button>
+          <slot name="footer" :btnText="btnText">
+            <button @click="close">ok</button>
           </slot>
         </div>
       </div>
@@ -25,6 +24,10 @@ export default {
       type: Boolean,
       default: false,
       reqired: true
+    },
+    btnText: {
+      type: Object,
+      reqired: true
     }
   },
   data () {
@@ -34,7 +37,7 @@ export default {
   },
   methods: {
     close () {
-      this.$emit('onClose')
+      this.$emit('update:visible', false)
     }
   }
 }

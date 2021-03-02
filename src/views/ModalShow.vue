@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Modal :visible="visable" @onClose="close">
+    <Modal :visible.sync="visable" :btnText="btnText">
       <template v-slot:content>
           contents
       </template>
-      <!-- <template v-slot:footer>
-        <button @click="close">done</button>
-      </template> -->
+      <template v-slot:footer="slotScope">
+        <button @click="close">{{ slotScope.btnText.text }}</button>
+      </template>
     </Modal>
     <button @click="showModal">show</button>
   </div>
@@ -16,6 +16,10 @@ import Modal from '../components/codesandbox/modal/Modal.vue'
 export default {
   data () {
     return {
+      btnText: {
+        id: 1,
+        text: 'O---K'
+      },
       visable: false
     }
   },
