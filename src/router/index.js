@@ -37,6 +37,11 @@ const routes = [
     path: '/form-create',
     name: 'formCreate',
     component: () => import('../views/form_create/FormCreate1.vue')
+  },
+  {
+    path: '/vxe-table',
+    name: 'vxe-table',
+    component: () => import('../views/vxe_table/VxeTable.vue')
   }
 ]
 

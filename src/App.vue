@@ -6,7 +6,8 @@
       <router-link to="/todo">Todo</router-link> |
       <router-link to="/modal">Modal</router-link> |
       <router-link to="/state">State Management</router-link> |
-      <router-link to="/form-create">Form Create</router-link>
+      <router-link to="/form-create">Form Create</router-link> |
+      <router-link to="/vxe-table">Vxe-table</router-link>
     </div>
     <router-view/>
   </div>
