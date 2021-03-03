@@ -32,6 +32,11 @@ const routes = [
     path: '/state',
     name: 'state',
     component: () => import('../views/StateManagement.vue')
+  },
+  {
+    path: '/form-create',
+    name: 'formCreate',
+    component: () => import('../views/form_create/FormCreate1.vue')
   }
 ]
 
