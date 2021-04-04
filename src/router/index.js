@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+// import BaseLayout from '../views/more/BaseLayout.vue'
 
 Vue.use(VueRouter)
 
@@ -42,6 +43,11 @@ const routes = [
     path: '/vxe-table',
     name: 'vxe-table',
     component: () => import('../views/vxe_table/VxeTable.vue')
+  },
+  {
+    path: '/more',
+    name: 'more',
+    component: () => import('../views/more/BaseLayout.vue')
   }
 ]
 

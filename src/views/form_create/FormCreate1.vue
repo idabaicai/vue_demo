@@ -16,28 +16,28 @@
   </div>
 </template>
 <script>
-window.formCreate.create(
-  // rule
-  [
-    {
-      type: 'input',
-      field: 'good',
-      title: 'movie'
-    },
-    {
-      type: 'datePicker',
-      field: 'create_at',
-      title: 'create time'
-    }
-  ],
-  {
-    el: document.querySelector('#form-create2'),
-    resetBtn: true,
-    onSubmit (formData) {
-      console.log(formData)
-    }
-  }
-)
+// window.formCreate.create(
+//   // rule
+//   [
+//     {
+//       type: 'input',
+//       field: 'good',
+//       title: 'movie'
+//     },
+//     {
+//       type: 'datePicker',
+//       field: 'create_at',
+//       title: 'create time'
+//     }
+//   ],
+//   {
+//     el: document.querySelector('#form-create2'),
+//     resetBtn: true,
+//     onSubmit (formData) {
+//       console.log(formData)
+//     }
+//   }
+// )
 export default {
   data () {
     return {
