@@ -8,6 +8,8 @@
       <router-link to="/state">State Management</router-link> |
       <router-link to="/form-create">Form Create</router-link> |
       <router-link to="/vxe-table">Vxe-table</router-link> |
+      <router-link to="/vue-pdf">vue-pdf</router-link> |
+      <router-link to="/vue-pdf-app">vue-pdf-app</router-link> |
       <router-link to="/more">More</router-link>
     </div>
     <router-view />
